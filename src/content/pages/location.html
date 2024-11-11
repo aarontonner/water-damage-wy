@@ -1,0 +1,88 @@
+---
+title: "Locations We Serve | Water Damage Repair"
+description: "Learn about the water damage services we offer for your city!"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "location/"
+eleventyNavigation:
+  key: Blog
+  order: 500
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/blog.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Water Damage Service Locations</h1>
+  <picture>
+    <source media="(max-width: 600px)" srcset="/assets/images/banner.jpg" />
+    <source media="(min-width: 601px)" srcset="/assets/images/banner.jpg" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/banner.jpg"
+      alt="water damage service locations"
+      loading="eager"
+      width="2500"
+      height="1667"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+<div class="blog-container main-content-wrapper">
+  <!--Main content -->
+  <div class="main-content">
+    <!-- ============================================ -->
+    <!--                 Blog Articles                -->
+    <!-- ============================================ -->
+
+    {% if collections.location | length == 0 %}
+    <h1>No Recent locations</h1>
+    {% else %} {%- for location in collections.location | reverse -%}
+    <article class="recent-articles">
+      <!--Main Article Image-->
+      <picture class="blog-mainImage">
+        <img
+          src="{{ location.data.image }}"
+          alt=""
+          width="795"
+          height="400"
+          decoding="async"
+        />
+      </picture>
+      <!--Article Info-->
+      <div class="article-group">
+        <div class="blog-authorGroup">
+          <!--Author Image-->
+          <picture class="blog-author-img">
+            <img
+              src="/assets/svgs/profile.svg"
+              alt="house"
+              width="32"
+              height="32"
+              decoding="async"
+            />
+          </picture>
+          <span class="blog-author">{{ location.data.author }}</span>
+          <span aria-hidden="true" class="blog-dot"></span>
+          <!--Blog Date-->
+          {#
+          <span class="blog-date">{{ location.date | locationDate }}</span> #}
+        </div>
+        <h2 class="blog-h1">{{ location.data.location }}</h2>
+        <a href="{{ location.url }}" class="blog-link">Continue Reading</a>
+      </div>
+    </article>
+    {%- endfor -%} {% endif %}
+  </div>
+
+  {% include 'components/featured-post.html' %}
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/location.html",
+  "tags": "location",
+  "permalink": "location/{{title}}/index.html"
+}

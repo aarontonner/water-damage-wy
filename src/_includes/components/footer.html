@@ -1,0 +1,71 @@
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+  <div class="container">
+    <div class="left-section">
+      <a class="logo" href="/">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/logo-svg.svg"
+          alt="water damage repair in wyoming"
+          width="264"
+          height="78"
+        />
+      </a>
+      <p>
+        Water damage doesn’t wait, and neither should you. Call us today for
+        24/7 emergency services, expert mold removal, and comprehensive water
+        damage restoration in the state of Wyoming. We’re here to help you
+        recover quickly and effectively!
+      </p>
+    </div>
+    <div class="right-section">
+      <div class="lists">
+        <ul>
+          <li>
+            <h2>Information</h2>
+          </li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/location">Locations</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>Locations</h2>
+          </li>
+          <li>
+            <a href="/location">View all</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>Contact</h2>
+          </li>
+          {#
+          <li>
+            <a href="/contact">
+              {{client.address.city}} {{client.address.state}}
+            </a>
+          </li>
+          #}
+          <li>
+            <a href="tel:{{client.phoneForTel}}">
+              T: {{client.phoneFormatted}}
+            </a>
+          </li>
+          {#
+          <li>
+            <a href="mailto:{{client.email}}">Click to Email</a>
+          </li>
+          #}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

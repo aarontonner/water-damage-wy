@@ -1,0 +1,15 @@
+{
+  "name": "Water Damage WY",
+  "email": "EMAIL@EMAIL.com",
+  "phoneForTel": "307-381-4989",
+  "phoneFormatted": "(307) 381-4989",
+  "address": {
+    "lineOne": "ADDRESS LINE 1",
+    "lineTwo": "ADDRESS LINE 2",
+    "city": "WY",
+    "state": "WY",
+    "zip": "ZIP",
+    "mapLink": "https://www.google.com/maps/place/Iowa,+USA/@41.9079499,-96.0350947,7z/data=!3m1!4b1!4m6!3m5!1s0x87ee5e6ff1f86019:0xc6ef634a57c759d9!8m2!3d41.8780025!4d-93.097702!16zL20vMDNzMHc?entry=ttu"
+  },
+  "domain": "https://www.wyomingfloodrepair.com"
+}

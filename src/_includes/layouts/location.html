@@ -1,0 +1,236 @@
+---
+preloadCSS: "/assets/css/blog.css"
+eleventyComputed:
+  title: "{{ pageTitle }}"
+  description: "{{ description }}"
+  preloadImg: "{{ image }}"
+  permalink: "/{{ location | slug }}/index.html"
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/blog.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/services.css" />
+<link rel="stylesheet" href="/assets/css/components.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-329">
+  <div class="cs-container">
+    <div class="cs-flex-group">
+      <h1 class="cs-title">{{ heroTitle }}</h1>
+      <p class="cs-text">
+       {{ heroText }}
+      </p>
+      <div class="cs-button-group">
+        <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+          >{{client.phoneFormatted}}</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Image -->
+  <picture class="cs-background">
+    <source media="(max-width: 600px)" srcset="/assets/images/hero.jpg" />
+    <source media="(min-width: 601px)" srcset="/assets/images/hero.jpg" />
+    <img
+      decoding="async"
+      src="/assets/images/hero.jpg"
+      alt="{{ heroAlt }}"
+      width="2250"
+      height="1500"
+      aria-hidden="true"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-1693">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Have an emergency? Call our {{ location }} water damage experts now.</h2>
+            <div class="cs-button-group">
+        <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+          >{{client.phoneFormatted}}</a
+        >
+      </div>
+        </div>
+    </div>
+    <div class="cs-wrapper">
+        <img class="cs-graphic cs-graphic-1" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo.png" alt="{{ heroAlt }}" height="372" width="372" loading="lazy" decoding="async">
+        <img class="cs-graphic cs-graphic-2" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo.png" alt="{{ heroAlt }}" height="372" width="372" loading="lazy" decoding="async">
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-848">
+  <div class="cs-container">
+    
+    <div class="cs-image-group">
+      <!--Top Picture-->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/3.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/3.jpg" />
+        <img
+          decoding="async"
+          src="/assets/images/3.jpg"
+          alt="{{ heroAlt }}"
+          width="542"
+          height="520"
+          aria-hidden="true"
+        />
+      </picture>
+      <!--Top Picture-->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/4.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/4.jpg" />
+        <img
+          decoding="async"
+          src="/assets/images/4.jpg"
+          alt="{{ heroAlt }}"
+          width="542"
+          height="520"
+          aria-hidden="true"
+        />
+      </picture>
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/5.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/5.jpg" />
+        <img
+          decoding="async"
+          src="/assets/images/5.jpg"
+          alt="{{ heroAlt }}"
+          width="542"
+          height="520"
+          aria-hidden="true"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+            <div>
+    <div id="blog-content" >{{ content | safe }}</div>
+    <div class="cs-button-group">
+        <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+          >{{client.phoneFormatted}}</a
+        >
+      </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-1693">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Have an emergency? Call our {{ location }} water damage experts now.</h2>
+            <div class="cs-button-group">
+        <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+          >{{client.phoneFormatted}}</a
+        >
+      </div>
+        </div>
+    </div>
+    <div class="cs-wrapper">
+        <img class="cs-graphic cs-graphic-1" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo.png" alt="{{ heroAlt }}" height="372" width="372" loading="lazy" decoding="async">
+        <img class="cs-graphic cs-graphic-2" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo.png" alt="{{ heroAlt }}" height="372" width="372" loading="lazy" decoding="async">
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-1594">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/6.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/6.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/5.jpg"
+          alt="{{ summaryTitle }}"
+          width="413"
+          height="500"
+        />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/7.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/7.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/6.jpg"
+          alt="{{ summaryTitle }}"
+          width="413"
+          height="280"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">get your water damage repaired now</span>
+      <h2 class="cs-title">{{ summaryTitle }}</h2>
+      <p class="cs-text">{{ summaryText }}</p>
+       <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
+        >Call Now {{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+                                
+
+{% include 'components/featured-post.html' %}
+
+<!-- ============================================ -->
+<!--                    Map                       -->
+<!-- ============================================ -->
+
+<section id="map-1834">
+    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/brown-pin.svg" alt="water damage service locations" decoding="async" width="52" height="52" aria-hidden="true">
+    <div class="cs-background">
+        <iframe loading="lazy" src="{{ mapUrl }}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            {% if collections.location | length == 0 %}
+            <p>More service coverage coming soon!</p>
+            {% else %}  {%- for location in collections.location | reverse -%}
+            <li class="cs-item">
+                <a href="{{ location.url }}" class="cs-li-link cs-drop-link"
+                  >{{ location.data.location }} &#8594;</a
+                >
+            </li>
+            {%- endfor -%}{% endif %}
+        </ul>
+    </div>
+</section>
+                                
+
+</div>
+{% endblock %}

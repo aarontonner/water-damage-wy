@@ -1,0 +1,1837 @@
+STEPS:
+
+- local images for area
+
+1. change business information in src/_data/client.json
+2. add domain in src/robots.txt for sitemap creation
+3. manually add permalinks, page titles, meta descriptions, preload images, internal links on all pages
+4. add logo to header and footer 
+5. manually add location page file names to /pages/locations/ and proper links to header & footer navigation
+and add page content, including page specific FAQ
+6. add business description in footer and mirror anywhere else online if possile (gmb)
+7. manually change image alt text on all pages
+8. add 'other-content' links to header and footer, change file names, and add page content
+9. add FAQ page content
+10. add contact page content
+11. confirm on ALL pages - SEO titles, H1, proper phone number, proper links
+12. submit sitemap to GSC
+
+is site working? go hard.
+A) add /locations page with links to all locations, create 'locations' component with internal links and add to all pages
+B) add 'other-content' component with internal links to all pages
+C) add more CTA's site-wide within content
+D) start tracking using GA and GSC, create tracking projects in SEMRUSH
+E) develop blog/other-content content plan (videos, 3 pillars, internal links, unique images, etc)
+F) worth adding unique images across the site?
+G) more internal links
+H) develop unique logo and business voice
+I) now possible to get gmb and customer reviews? probably only if committ to one company
+
+
+
+FOR AARON:
+- change emblem for universal use
+
+// OTHER-CONTENT //
+---
+title: "Other Content"
+description: "Meta"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "/other-content"
+eleventyNavigation:
+  key: KEYWORD
+  order: 400
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/services.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1402">
+  <div class="cs-container">
+    <span class="cs-int-title">What is SR22?</span>
+    <div class="cs-breadcrumbs">
+      <a href="" class="cs-link">Home</a>
+      <a href="" class="cs-link cs-active">What is SR22?</a>
+    </div>
+    <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+      >{{client.phoneFormatted}}</a
+    >
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="/assets/images/banner.jpg" />
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="/assets/images/banner.jpg" />
+    <img
+      decoding="async"
+      src="/assets/images/banner.jpg"
+      alt="banner"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<section id="content-page-1402">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <div class="cs-flex">
+        <picture class="cs-background">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/assets/images/1.jpg" />
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/assets/images/1.jpg" />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/1.jpg"
+            alt="1"
+            width="542"
+            height="728"
+          />
+        </picture>
+        <div class="cs-box">
+          <img
+            class="cs-box-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg"
+            alt="people"
+            width="60"
+            height="60"
+          />
+          <span class="cs-desc"> We’ve Over 26 Years of Experience </span>
+        </div>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg"
+              alt="icon"
+              width="32"
+              height="32"
+            />
+            Quality Services
+          </h3>
+          <p class="cs-item-text">
+            There are many variations of but the majority is simply free
+            suffered.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg"
+              alt="icon"
+              width="32"
+              height="32"
+            />
+            Quality Services
+          </h3>
+          <p class="cs-item-text">
+            There are many variations of but the majority is simply free
+            suffered.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="cs-content">
+      <h1 class="cs-title">
+        h1 - A Personalized Approach To Your
+        <span class="cs-color">Well-Being</span>
+      </h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4-6</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+        laboriosam eum quae in temporibus cumque tempora expedita mollitia
+        nostrum adipisci, ipsum commodi, cupiditate, sequi quos enim! Quaerat
+        esse non sunt! Lorem ipsum dolor sit amet <a href="">link example</a>.
+        Est, quis!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+        laboriosam eum quae in temporibus cumque tempora expedita mollitia
+        nostrum <strong>adipisci, ipsum commodi</strong>, cupiditate, sequi quos
+        enim!
+      </p>
+      <h3>Heading 3</h3>
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ol>
+      <h4>Heading 4-6</h4>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+{% endblock %}
+
+// LOCATION-PAGE //
+---
+title: "Calgary SEO Services for Maximum Impact | Aaron Tonner Web Solutions"
+description: "Combining winning Calgary SEO Services and high-performance websites for maximum online impact and visibility. Call me directly at 587-437-9161 today."
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "/locations/location-1"
+eleventyNavigation:
+  key: KEYWORD
+  order: 200
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/about.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/services.css" />
+<link rel="stylesheet" href="/assets/css/components.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-329">
+  <div class="cs-container">
+    <div class="cs-flex-group">
+      <h1 class="cs-title"><span class="cs-accent">SR22</span> for KEYWORD</h1>
+      <p class="cs-text">Content with main keyword once.</p>
+      <div class="cs-button-group">
+        <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+          >{{client.phoneFormatted}}</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Image -->
+  <picture class="cs-background">
+    <source media="(max-width: 600px)" srcset="hero.jpg" />
+    <source media="(min-width: 601px)" srcset="hero.jpg" />
+    <img
+      decoding="async"
+      src="hero.jpg"
+      alt="hero"
+      width="2250"
+      height="1500"
+      aria-hidden="true"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1666">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <picture class="cs-picture shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/1.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/1.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/1.jpg"
+          alt="1"
+          width="605"
+          height="690"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Subheader</span>
+      <h2 class="cs-title">H2 Keyword</h2>
+      <p class="cs-text">Content about H2 keyword</p>
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr 22 coverage"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> LI Title </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Stuff</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr 22 coverage"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> LI Title </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Stuff</p>
+        </li>
+      </ul>
+      <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+        >{{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="RTsbs-1594">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1 shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/2.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/2.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/2.jpg"
+          alt="2"
+          width="413"
+          height="500"
+        />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2 shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/3.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/3.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/3.jpg"
+          alt="3"
+          width="413"
+          height="280"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Topper</span>
+      <h2 class="cs-title">H2 Keyword</h2>
+      <p class="cs-text">Content</p>
+      <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+        >Call Now: {{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-1594">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/4.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/4.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/4.jpg"
+          alt="4"
+          width="413"
+          height="500"
+        />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/5.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/5.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/5.jpg"
+          alt="5"
+          width="413"
+          height="280"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Topper</span>
+      <h2 class="cs-title">H2 Keyword</h2>
+      <p class="cs-text">H2 Keyword content</p>
+      <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
+        >Call Now {{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+{% include 'components/cta.html' %}
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="RTsbs-1594">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1 shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/6.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/6.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/6.jpg"
+          alt="6"
+          width="413"
+          height="500"
+        />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2 shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/7.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/7.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/7.jpg"
+          alt="7"
+          width="413"
+          height="280"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Topper</span>
+      <h2 class="cs-title">H2 Keyword</h2>
+      <p class="cs-text">Content</p>
+      <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+        >Call Now: {{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1667">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <picture class="cs-picture shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/8.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/8.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/8.jpg"
+          alt="8"
+          width="605"
+          height="690"
+        />
+      </picture>
+      <!--SVG Graphic-->
+      <img
+        class="cs-floater"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-swirl.svg"
+        alt="graphic"
+        loading="lazy"
+        decoding="async"
+        height="710"
+        aria-hidden="true"
+        width="690"
+      />
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Topper</span>
+      <h2 class="cs-title">H2 Keyword</h2>
+      <p class="cs-text">Content</p>
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="check"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text">LI Title </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Content</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="affordable calgary website design"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> LI Keyword </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Content</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="affordable calgary website design"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> LI Keyword </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Content</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="affordable calgary website design"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> LI Keyword </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Content</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="affordable calgary website design"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> LI Keyword </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Content</p>
+        </li>
+      </ul>
+      <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
+        >{{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1346">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Get The Answers You Need</span>
+      <h2 class="cs-title">FAQ</h2>
+      <p class="cs-text">Content</p>
+    </div>
+    <div class="cs-flex-group">
+      <div class="cs-button-group">
+        <!--If you need to add another button, make sure to copy and paste from one of the buttons here and increment the data-filter value, so the next one would be data-filter="four", and so on-->
+        <button class="cs-option" data-filter="one">Side Topic</button>
+
+        <button class="cs-option" data-filter="two">Other topic</button>
+        <button class="cs-option" data-filter="three">Other topic</button>
+      </div>
+      <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
+      <div class="cs-wrapper">
+        <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
+        <ul class="cs-faq-group" data-category="one">
+          <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text"> Question Keyword</span>
+            </button>
+            <p class="cs-item-p">Answer</p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text"> Question Keyword</span>
+            </button>
+            <p class="cs-item-p">Answer</p>
+          </li>
+        </ul>
+
+        <ul class="cs-faq-group cs-hidden" data-category="two">
+          <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+        </ul>
+        <ul class="cs-faq-group cs-hidden" data-category="three">
+          <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{# FORM #} {% include 'components/form.html' %} {% endblock %}
+
+// BLOG //
+---
+title: "Blog"
+description: "Meta"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "blog/"
+eleventyNavigation:
+  key: Blog
+  order: 500
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/blog.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Blog</h1>
+  <p>The blog.</p>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/cabinets2-m.jpg"
+    />
+    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/cabinets2.jpg"
+      alt="kitchen cabinets"
+      loading="eager"
+      width="2500"
+      height="1667"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+<div class="blog-container main-content-wrapper">
+  <!--Main content -->
+  <div class="main-content">
+    <!-- ============================================ -->
+    <!--                 Blog Articles                -->
+    <!-- ============================================ -->
+
+    {% if collections.post | length == 0 %}
+    <h1>No Recent Posts</h1>
+    {% else %} {%- for post in collections.post | reverse -%}
+    <article class="recent-articles">
+      <!--Main Article Image-->
+      <picture class="blog-mainImage">
+        <img
+          src="{{ post.data.image }}"
+          alt="{{ post.data.imageAlt }}"
+          width="795"
+          height="400"
+          decoding="async"
+        />
+      </picture>
+      <!--Article Info-->
+      <div class="article-group">
+        <div class="blog-authorGroup">
+          <!--Author Image-->
+          <picture class="blog-author-img">
+            <img
+              src="/assets/svgs/profile.svg"
+              alt="house"
+              width="32"
+              height="32"
+              decoding="async"
+            />
+          </picture>
+          <span class="blog-author">{{ post.data.author }}</span>
+          <span aria-hidden="true" class="blog-dot"></span>
+          <!--Blog Date-->
+          <span class="blog-date">{{ post.date | postDate }}</span>
+        </div>
+        <h2 class="blog-h1">{{ post.data.title }}</h2>
+        <p class="blog-desc">{{ post.data.description }}</p>
+        <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+      </div>
+    </article>
+    {%- endfor -%} {% endif %}
+  </div>
+
+  {% include 'components/featured-post.html' %}
+</div>
+{% endblock %}
+
+// FAQ //
+---
+title: "FAQ"
+description: "Meta"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "/faq"
+eleventyNavigation:
+  key: Reviews
+  order: 400
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/faq.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1881">
+  <div class="cs-container">
+    <span class="cs-int-title">Frequently Asked Questions</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="" class="cs-link cs-active">FAQ</a>
+    </div>
+    <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+      >{{client.phoneFormatted}}</a
+    >
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dermatology-banner.png
+      "
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dermatology-banner.png
+      "
+    />
+    <img
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dermatology-banner.png"
+      alt=""
+      width="3860"
+      height="2577"
+      aria-hidden="true"
+    />
+  </picture>
+  <img
+    class="cs-graphic"
+    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/banner-flower.svg"
+    alt="graphic"
+    loading="lazy"
+    decoding="async"
+    height="202"
+    width="331"
+  />
+</div>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1720">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Faq</span>
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="cs-flex-group">
+      <div class="cs-button-group">
+        <!--If you need to add another button, make sure to copy and paste from one of the buttons here and increment the data-filter value, so the next one would be data-filter="four", and so on-->
+        <div class="cs-flex">
+          <button class="cs-option" data-filter="one">
+            <img
+              class="cs-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg"
+              alt="plus graphic"
+              width="12"
+              height="12"
+              decoding="async"
+              aria-hidden="true"
+            />
+            All available starter feature
+          </button>
+          <button class="cs-option" data-filter="two">
+            <img
+              class="cs-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg"
+              alt="plus graphic"
+              width="12"
+              height="12"
+              decoding="async"
+              aria-hidden="true"
+            />
+            Home service 24/7
+          </button>
+          <button class="cs-option" data-filter="three">
+            <img
+              class="cs-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg"
+              alt="plus graphic"
+              width="12"
+              height="12"
+              decoding="async"
+              aria-hidden="true"
+            />
+            Customer agent service
+          </button>
+          <button class="cs-option" data-filter="four">
+            <img
+              class="cs-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg"
+              alt="plus graphic"
+              width="12"
+              height="12"
+              decoding="async"
+              aria-hidden="true"
+            />
+            Professional Service
+          </button>
+          <button class="cs-option" data-filter="five">
+            <img
+              class="cs-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg"
+              alt="plus graphic"
+              width="12"
+              height="12"
+              decoding="async"
+              aria-hidden="true"
+            />
+            2 dedicated consultant
+          </button>
+        </div>
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people2.jpg
+            "
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people2.jpg
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people2.jpg"
+            alt="people"
+            width="353"
+            height="493"
+          />
+        </picture>
+      </div>
+      <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
+      <div class="cs-wrapper">
+        <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
+        <ul class="cs-faq-group" data-category="one">
+          <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the best way to start investing?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What are the tax implications of investing in the stock market?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the difference between a traditional IRA and a Roth IRA?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+        </ul>
+        <ul class="cs-faq-group cs-hidden" data-category="two">
+          <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the best way to start investing?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What are the tax implications of investing in the stock market?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the difference between a traditional IRA and a Roth IRA?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+        </ul>
+        <ul class="cs-faq-group cs-hidden" data-category="three">
+          <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the best way to start investing?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What are the tax implications of investing in the stock market?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the difference between a traditional IRA and a Roth IRA?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+        </ul>
+        <ul class="cs-faq-group cs-hidden" data-category="four">
+          <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the best way to start investing?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What are the tax implications of investing in the stock market?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the difference between a traditional IRA and a Roth IRA?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+        </ul>
+        <ul class="cs-faq-group cs-hidden" data-category="five">
+          <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the best way to start investing?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              In the U.S., the terms lawyer and attorney are often used
+              interchangeably. A lawyer provides legal services such as giving
+              legal advice, writing legal documents and providing policy counsel
+              to governments. An attorney, on top of these things also holds a
+              state or regional license to represent clients in a law court.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What are the tax implications of investing in the stock market?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I improve my credit score?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                What is the difference between a traditional IRA and a Roth IRA?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">
+                How can I reduce my tax liability as a self-employed individual?
+              </span>
+            </button>
+            <p class="cs-item-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin
+              diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta
+              enim, magna urna, quam.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+// CONTACT //
+---
+title: "Contact | Aaron Tonner Web Solutions | Websites & SEO"
+description: "Whether you're ready to start a project or you're just looking for answers to your website or SEO questions, you can reach me directly at 587-437-9161."
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "/contact/"
+eleventyNavigation:
+  key: Contact
+  order: 500
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/contact.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="ContactBanner-327">
+  <div class="cs-container">
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="/contact" class="cs-link cs-active">Contact</a>
+    </div>
+    <h1 class="cs-int-title">Easily Get In Touch</h1>
+    <p class="cs-text light">Contact us here.</p>
+    <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
+      >{{client.phoneFormatted}}</a
+    >
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="https://csimg.nyc3.digitaloceanspaces.com/Banners/library-m.jpg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="https://csimg.nyc3.digitaloceanspaces.com/Banners/library.jpg"
+    />
+    <img
+      aria-hidden="true"
+      loading="lazy"
+      decoding="async"
+      src="https://csimg.nyc3.digitaloceanspaces.com/Banners/library.jpg"
+      alt="library"
+      width="1920"
+      height="375"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1271">
+  <div class="cs-container">
+    <div class="cs-form-group">
+      <h3 class="cs-h3">
+        <picture class="cs-picture">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/clipboard-orange.svg"
+            alt="clipboard"
+            width="32"
+            height="32"
+          />
+        </picture>
+        We'll be thrilled to hear from you.
+      </h3>
+      <!--Form-->
+      <form
+        class="cs-form"
+        id="cs-form-1271"
+        name="contactpage"
+        method="POST"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="contactpage" />
+
+        <label class="cs-label">
+          Name
+          <input
+            class="cs-input"
+            required
+            type="text"
+            id="name-1271"
+            name="name"
+            placeholder="Name"
+          />
+        </label>
+        <label class="cs-label cs-email">
+          Email
+          <input
+            class="cs-input"
+            required
+            type="email"
+            id="email-1271"
+            name="email"
+            placeholder="Email"
+          />
+        </label>
+        <label class="cs-label cs-phone">
+          Phone
+          <input
+            class="cs-input"
+            required
+            type="phone"
+            id="phone-1271"
+            name="phone"
+            placeholder="Phone"
+          />
+        </label>
+        <label class="cs-label">
+          Message
+          <textarea
+            class="cs-input cs-textarea"
+            required
+            name="Message"
+            id="message-1271"
+            placeholder="Write message..."
+          ></textarea>
+        </label>
+        <button class="cs-button-solid cs-submit" type="submit">
+          Send Message
+        </button>
+      </form>
+    </div>
+    <div class="cs-wrapper">
+      <div class="cs-content">
+        <span class="cs-topper">Contact us</span>
+        <h2 class="cs-title">Get in touch with us here</h2>
+        <p class="cs-text">Hello you</p>
+      </div>
+    </div>
+  </div>
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg
+      "
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg
+      "
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg"
+      alt="waves"
+      width="960"
+      height="839"
+    />
+  </picture>
+</section>
+
+{% endblock %}
+

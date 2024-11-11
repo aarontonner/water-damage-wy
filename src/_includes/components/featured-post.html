@@ -1,0 +1,58 @@
+<!-- ============================================ -->
+<!--                    Blog                      -->
+<!-- ============================================ -->
+
+<section id="blog-1145">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-content-flex">
+        <span class="cs-topper">News And Articles</span>
+        <h2 class="cs-title">Flood Management - Featured Posts</h2>
+      </div>
+    </div>
+    {% if collections.featured | length == 0 %}
+    <p class="cs-text">
+      Our water damage experts are working on creating blogs, articles, and news
+      posts as we strive to keep our customers up-to-date on everything you need
+      to know about water damage repair, restoration, and mold remidiation. Stay
+      tuned!
+    </p>
+    <ul class="cs-card-group">
+      {% else %}
+      <li class="cs-item">
+        {%- for post in collections.featured | reverse -%}
+        <picture class="cs-picture" aria-hidden="true">
+          <source media="(max-width: 600px)" srcset="{{ post.data.image }}" />
+          <source media="(min-width: 601px)" srcset="{{ post.data.image }}" />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="{{ post.data.image }}"
+            alt="{{ post.data.imageAlt }}"
+            width="305"
+            height="180"
+          />
+        </picture>
+        <div class="cs-flex">
+          <span class="cs-date">{{ post.date | postDate }}</span>
+          <h3 class="cs-h3">{{ post.data.title }}</h3>
+          <a href="{{ post.url }}" class="cs-link">
+            Read More
+            <img
+              class="cs-arrow"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg"
+              alt="icon"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+        {%- endfor -%}
+      </li>
+    </ul>
+    {% endif %}
+  </div>
+</section>
